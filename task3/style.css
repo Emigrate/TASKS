@@ -1,0 +1,140 @@
+:root {
+    --bgwhite:rgba(122, 10, 235, 0.333);
+    --flowerblue: cornflowerblue;
+    --buttonblue: rgb(121, 153, 212);
+    --color: rgba(172, 46, 56, 0.918);
+    --modalbuttons: #04AA6D;
+}
+
+.dark {
+    --bgwhite: black;
+    --flowerblue: gray;
+    --buttonblue: rgb(27, 25, 25);
+    --color: white;
+    --modalbuttons: rgb(42, 36, 36);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background: var(--bgwhite);
+}
+
+header {
+    width: 100%;
+    background: var(--flowerblue);
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid silver;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 23px;
+}
+
+.button-login {
+    width: 45%;
+    height: 50px;
+    background: var(--buttonblue);
+    border-radius: 20px;
+    border: 3px solid silver;
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.button-dark {
+    width: 45%;
+    height: 50px;
+    background: var(--buttonblue);
+    border-radius: 20px;
+    border: 3px solid silver;
+    margin-left: 10px;
+    font-size: 25px;
+    color: var(--color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(250, 231, 209);
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background:var(--flowerblue);
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid silver;
+    color: var(--color);
+}
+
+table {
+    width: 60%;
+    height: 300px;
+    margin-left: 10px;
+    background: var(--flowerblue);
+    margin-top: 30px;
+    margin-right: 10px;
+    color: var(--color);
+}
+
+img {
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--modalbuttons);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.b-popup{
+    display:none;
+}
+
+.b-container{
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+}
+
+.b-popup-show{
+    width:30%;
+    min-height:20%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    left:660px;
+    top:100px;
+    border-radius: 20px;
+}
+
+
