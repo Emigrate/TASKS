@@ -14,12 +14,12 @@ linkLogin.addEventListener("click", function() {
     linkPopup.classList.add("b-popup-show");
 })
 
-cancelbtn.addEventListener("click", function(){
+cancelbtn.addEventListener("click", function() {
     linkPopup.classList.remove("b-popup.show");
     linkPopup.classList.add("b-popup");
 })
 
-bcontainer.addEventListener("click", function(){
+bcontainer.addEventListener("click", function() {
     linkPopup.classList.remove("b-popup.show");
     linkPopup.classList.add("b-popup");
 })
