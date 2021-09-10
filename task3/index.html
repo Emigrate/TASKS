@@ -10,8 +10,8 @@
 <body>
     <header>
         <div class="container-button">
-            <button class="button-login">Login</button>
-            <button class="button-dark">Dark Mode</button>
+            <button id="button-login" class="buttons">Login</button>
+            <button id="button-dark" class="buttons">Dark Mode</button>
         </div>
     </header>
         <div class="container">
@@ -56,19 +56,19 @@
             <tr><td>46,5</td><td>12,5</td><td>48</td><td>30,5</td></tr>
             <tr><td>47</td><td>13</td><td>48⅔</td><td>31</td></tr>
             <tr><td>48</td><td>13,5</td><td>49⅓</td><td>31,5</td></tr>
+        </div>
     </table>
-    <div class="b-container">
-        <div id="popuptoggle" onclick="event.stopPropagation()" class="b-popup">
-            <div class="b-popup-content">
+        <div class="b-popup-content">
+            <div id="blackcontainer"  class="b-popup"></div>
+            <div id="popuptoggle" onclick="event.stopPropagation()" class="b-popup">
                 <form method="post">
                     <input type="text" placeholder="Enter Username" name="uname" required>
                     <input type="password" placeholder="Enter Password" name="psw" required>
                     <button type="submit">Login</button>
-                </form>
-                <button type="button" class="cancelbtn">Cancel</button>
-            </div>
+                </form>  
+                    <button type="button" class="cancel-btn">Cancel</button>         
+            </div>          
         </div>
-    </div>
     <script src="app.js"></script>
 </body>
 </html>
