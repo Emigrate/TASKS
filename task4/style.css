@@ -98,13 +98,7 @@ a {
     margin-top: 64px;
 }
 
-.l-column {
-    display: flex;
-    margin-top: 25px;
-    flex-direction: column;
-}
-
-.r-column{
+.mini-column {
     display: flex;
     margin-top: 25px;
     flex-direction: column;
